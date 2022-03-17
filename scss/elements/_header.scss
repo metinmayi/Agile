@@ -13,6 +13,10 @@ header {
         display: flex;
         width: 80%;
         height: 80%;
+        // border-bottom: 3px solid black;
+        // border-left: 2px solid black;
+        padding-left: 20px;
+        padding-bottom: 20px;
         .logoContainer {
             opacity: 1;
             display: flex;
@@ -25,21 +29,22 @@ header {
             justify-content: flex-end;
             gap: 80px;
             width: 50%;
-            height: 60%;
+            // height: 60%;
             font-size: 12pt;
             a {
                 text-decoration: none;
                 color: black;
             }
+
             .myPagesBtn {
-                border-radius: 15px;
+                // border-radius: 15px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 120px;
                 height: 40px;
-                background-color: $darkgray;
-                color: $silver;
+                background-color: $orange;
+                color: black;
                 box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
                     rgba(0, 0, 0, 0.22) 0px 15px 12px;
             }
