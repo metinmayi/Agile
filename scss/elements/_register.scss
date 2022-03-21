@@ -1,0 +1,16 @@
+.registerInputs {
+    input {
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+}
+
+.registerButton {
+    background-color: $gray;
+    color: $silver;
+    border: none;
+    // border-radius: 10px;
+    height: 30px;
+    font-family: "Roboto";
+    font-size: 11pt;
+}

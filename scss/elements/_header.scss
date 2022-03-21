@@ -37,14 +37,15 @@ header {
             }
 
             .myPagesBtn {
-                // border-radius: 15px;
+                border-radius: 15px;
+                border: 2px solid $darkgray;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 120px;
                 height: 40px;
-                background-color: $red;
-                color: black;
+                background-color: $darkgray;
+                color: $silver;
                 box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
                     rgba(0, 0, 0, 0.22) 0px 15px 12px;
             }

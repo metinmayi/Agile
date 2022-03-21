@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/public/style.css" />
-		<title>Städafint</title>
-	</head>
-	<body>
-		<div class="heroContainer">
-			<header>
-				<div class="aContainer">
-					<div class="logoContainer">
-						<img
-							src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Svensk_Filmindustri_logo.png"
-							alt=""
-						/>
-					</div>
-					<div class="navContainer">
-						<a href="">Boka</a>
-						<a href="">Kontakt</a>
-						<a href="#" class="myPagesBtn">Mina sidor</a>
-					</div>
-				</div>
-			</header>
-			<div class="loginWrapper">
-				<div class="loginContainer">
-					<form class="loginForm" action="/users/login" method="POST">
-						<div class="loginInputs">
-							<label for="loginUsername">Användarnamn:</label>
-							<input type="text" id="loginUsername" name="loginUsername" />
-							<label for="loginPassword">Lösenord:</label>
-							<input type="password" id="loginPassword" name="loginPassword" />
-						</div>
-						<div class="loginButtons">
-							<button type="submit">Logga in</button>
-							<a href="./index.html"><button type="button">Bakåt</button></a>
-						</div>
-						<p class="loginInfoText">
-							Inte en användare? Registrera dig <a href="">här</a>
-						</p>
-					</form>
-				</div>
-			</div>
-		</div>
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/public/style.css" />
+        <title>Städafint</title>
+    </head>
+    <body>
+        <div class="heroContainer">
+            <header>
+                <div class="aContainer">
+                    <div class="logoContainer">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Svensk_Filmindustri_logo.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="navContainer">
+                        <a href="">Boka</a>
+                        <a href="">Kontakt</a>
+                        <a href="#" class="myPagesBtn">Mina sidor</a>
+                    </div>
+                </div>
+            </header>
+            <div class="loginWrapper">
+                <div class="loginContainer">
+                    <form class="loginForm" action="/users/login" method="POST">
+                        <div class="loginInputs">
+                            <label for="loginUsername">Användarnamn:</label>
+                            <input
+                                type="text"
+                                id="loginUsername"
+                                name="loginUsername"
+                            />
+                            <label for="loginPassword">Lösenord:</label>
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                name="loginPassword"
+                            />
+                        </div>
+                        <div class="loginButtons">
+                            <button type="submit">Logga in</button>
+                            <a href="./index.html"
+                                ><button type="button">Bakåt</button></a
+                            >
+                        </div>
+                        <p class="loginInfoText">
+                            Inte en användare? Registrera dig
+                            <a href="/register.html">här</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

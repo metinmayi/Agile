@@ -4,7 +4,64 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="stylesheet" href="/public/style.css" />
+        <title>Städafint</title>
     </head>
-    <body></body>
+    <body>
+        <div class="heroContainer">
+            <header>
+                <div class="aContainer">
+                    <div class="logoContainer">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Svensk_Filmindustri_logo.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="navContainer">
+                        <a href="">Boka</a>
+                        <a href="">Kontakt</a>
+                        <a href="#" class="myPagesBtn">Mina sidor</a>
+                    </div>
+                </div>
+            </header>
+            <div class="loginWrapper">
+                <div class="loginContainer">
+                    <form
+                        class="loginForm"
+                        action="/users/register"
+                        method="POST"
+                    >
+                        <div class="registerInputs">
+                            <!-- <label for="loginUsername">Användarnamn:</label> -->
+                            <input
+                                type="text"
+                                name="username"
+                                id=""
+                                placeholder="Användarnamn"
+                            />
+                            <!-- <label for="loginPassword">Lösenord:</label> -->
+                            <input
+                                type="password"
+                                name="password"
+                                id=""
+                                placeholder="Lösenord"
+                            />
+                            <input
+                                type="password"
+                                name="confirmPassword"
+                                id=""
+                                placeholder="Lösenord igen"
+                                class="register-input"
+                            />
+                        </div>
+                        <div class="loginButtons">
+                            <button type="submit" class="registerButton">
+                                Registrera
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
