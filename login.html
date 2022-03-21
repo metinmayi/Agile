@@ -1,59 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/public/style.css" />
-        <title>Städafint</title>
-    </head>
-    <body>
-        <div class="heroContainer">
-            <header>
-                <div class="aContainer">
-                    <div class="logoContainer">
-                        <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Svensk_Filmindustri_logo.png"
-                            alt=""
-                        />
-                    </div>
-                    <div class="navContainer">
-                        <a href="">Boka</a>
-                        <a href="">Kontakt</a>
-                        <a href="#" class="myPagesBtn">Mina sidor</a>
-                    </div>
-                </div>
-            </header>
-            <div class="loginWrapper">
-                <div class="loginContainer">
-                    <form class="loginForm" action="/users/login" method="POST">
-                        <div class="loginInputs">
-                            <label for="loginUsername">Användarnamn:</label>
-                            <input
-                                type="text"
-                                id="loginUsername"
-                                name="loginUsername"
-                            />
-                            <label for="loginPassword">Lösenord:</label>
-                            <input
-                                type="password"
-                                id="loginPassword"
-                                name="loginPassword"
-                            />
-                        </div>
-                        <div class="loginButtons">
-                            <button type="submit">Logga in</button>
-                            <a href="./index.html"
-                                ><button type="button">Bakåt</button></a
-                            >
-                        </div>
-                        <p class="loginInfoText">
-                            Inte en användare? Registrera dig
-                            <a href="/register.html">här</a>
-                        </p>
-                    </form>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/style.css" />
+    <title>Städafint</title>
+  </head>
+  <body>
+    <div class="heroContainer">
+      <header>
+        <div class="logoContainer">
+          <h1>StädaFint</h1>
         </div>
-    </body>
+      </header>
+      <div class="textWrapper">
+        <p>Fyll i informationen nedan för att logga in.</p>
+      </div>
+      <form class="registerForm" action="/users/login" method="post">
+        <input
+          type="text"
+          id="loginUsername"
+          name="loginUsername"
+          placeholder="Användarnamn"
+          required
+        />
+        <input
+          required
+          type="password"
+          id="loginPassword"
+          name="loginPassword"
+          placeholder="Lösenord"
+        />
+
+        <input type="submit" value="Logga in" class="submitButton" />
+      </form>
+      <div class="textWrapperlogin">
+        Inget inlogg? Skapa ett <a href="/register.html">här</a>
+      </div>
+    </div>
+  </body>
 </html>
