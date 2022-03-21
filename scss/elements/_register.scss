@@ -1,16 +1,35 @@
-.registerInputs {
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     input {
-        margin-bottom: 10px;
-        border-radius: 10px;
+        @include input-field;
+        display: flex;
+        align-items: center;
+    }
+    select {
+        @include input-field;
+        width: 50%;
+        font-size: 1.2rem;
+        background-color: white;
+    }
+    .submitButton {
+        display: flex;
+        justify-content: center;
+        @include main-button;
+        text-align: center;
+        margin-top: 40px;
     }
 }
 
-.registerButton {
-    background-color: $gray;
-    color: $silver;
-    border: none;
-    // border-radius: 10px;
-    height: 30px;
-    font-family: "Roboto";
-    font-size: 11pt;
+.textWrapper a {
+    text-decoration: none;
+    color: $darkgray;
+    font-size: 1.1rem;
+}
+
+::placeholder {
+    font-size: 1.2rem;
 }

@@ -1,67 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/public/style.css" />
-		<title>Städafint</title>
-	</head>
-	<body>
-		<div class="heroContainer">
-			<header>
-				<div class="aContainer">
-					<div class="logoContainer">
-						<img
-							src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Svensk_Filmindustri_logo.png"
-							alt=""
-						/>
-					</div>
-					<div class="navContainer">
-						<a href="">Boka</a>
-						<a href="">Kontakt</a>
-						<a href="#" class="myPagesBtn">Mina sidor</a>
-					</div>
-				</div>
-			</header>
-			<div class="loginWrapper">
-				<div class="loginContainer">
-					<form class="loginForm" method="POST">
-						<div class="registerInputs">
-							<!-- <label for="loginUsername">Användarnamn:</label> -->
-							<input
-								type="text"
-								name="username"
-								id="registrationName"
-								placeholder="Användarnamn"
-								required
-							/>
-							<!-- <label for="loginPassword">Lösenord:</label> -->
-							<input
-								id="registrationPassword"
-								required
-								type="password"
-								name="password"
-								placeholder="Lösenord"
-								autocomplete="on"
-							/>
-							<input
-								id="registrationPasswordRepeat"
-								required
-								type="password"
-								name="confirmPassword"
-								placeholder="Lösenord igen"
-								class="register-input"
-								autocomplete="on"
-							/>
-						</div>
-						<div class="loginButtons">
-							<button type="submit" class="registerButton">Registrera</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<script src="/js/registerPage.js" type="module"></script>
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/public/style.css" />
+        <title>Städafint</title>
+    </head>
+    <body>
+        <div class="heroContainer">
+            <header>
+                <div class="logoContainer">
+                    <h1>StädaFint</h1>
+                </div>
+            </header>
+            <div class="textWrapper">
+                <p>Fyll i information nedan för att skapa ett konto.</p>
+            </div>
+            <form class="registerForm" method="post">
+                <input
+                    type="text"
+                    name="username"
+                    id="registrationName"
+                    placeholder="Användarnamn"
+                    required
+                />
+                <input
+                    required
+                    type="password"
+                    name="password"
+                    placeholder="Lösenord"
+                    autocomplete="on"
+                    id="registrationPassword"
+                />
+                <input
+                    required
+                    type="password"
+                    name="confirmPassword"
+                    placeholder="Bekräfta lösenord"
+                    class="register-input"
+                    autocomplete="on"
+                    id="registrationPasswordRepeat"
+                />
+                <select>
+                    <option>Privat</option>
+                    <option>Företag</option>
+                </select>
+                <input type="submit" value="Skapa konto" class="submitButton" />
+            </form>
+            <div class="textWrapper">
+                <a href="/login.html">Tillbaka</a>
+            </div>
+        </div>
+        <script src="/js/registerPage.js" type="module"></script>
+    </body>
 </html>
