@@ -1,0 +1,31 @@
+@mixin input-field {
+    padding: 15px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: 2px solid $darkgray;
+    border-radius: 10px;
+    &:focus {
+        border: 2px solid $gray;
+    }
+}
+
+@mixin main-button {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    background-color: $darkgray;
+    color: $silver;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+        background-color: $gray;
+    }
+    &:active {
+        transform: scale(1);
+    }
+}

@@ -25,3 +25,7 @@ body {
 img {
     height: 100%;
 }
+
+.main-button {
+    @include main-button;
+}
