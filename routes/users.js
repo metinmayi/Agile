@@ -30,4 +30,9 @@ router.post("/register", async (req, res) => {
     res.sendStatus(200);
 });
 
+router.post("/register", async (req, res) => {
+	console.log(req.body);
+	res.send({ username: "Karin" });
+});
+
 module.exports = router;
