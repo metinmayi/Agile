@@ -5,27 +5,34 @@
 }
 
 body {
-    // font-family: Arial, Helvetica, sans-serif;
     font-family: "Roboto", sans-serif;
+    color: $darkgray;
     // font-weight: bold;
 }
 
-.heroContainer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("/assets/hero-stairs.jpeg");
-    // background-image: url("/assets/hero-stairs.jpeg"));
-    // background-image: url("/assets/hero-stairs.jpeg");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.textWrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    p {
+        width: 90%;
+        font-size: 22pt;
+        font-weight: 500;
+    }
 }
 
-img {
-    height: 100%;
-}
-
-.main-button {
-    @include main-button;
+.loginRegisterWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    a {
+        @include main-button;
+    }
 }
