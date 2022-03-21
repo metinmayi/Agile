@@ -20,7 +20,12 @@ export function registerUser() {
 		try {
 			const response = await fetch("http://localhost:3000/users/register", {
 				method: "POST",
-				body: { Kalle: "Kaviar" },
+				mode: "cors",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({
+					username: formInputs[0].value,
+					password: formInputs[1].value,
+				}),
 			});
 			const successParagraph = document.createElement("p");
 			successParagraph.setAttribute("id", "successParagraph");
