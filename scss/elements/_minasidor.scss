@@ -10,6 +10,10 @@
   font-weight: 500;
 }
 
+.historiktitle {
+  color: white;
+}
+
 .textWrapperms {
   display: flex;
   justify-content: center;
@@ -37,12 +41,19 @@
   }
 }
 
+.bokadstädbakgrund {
+  background-color: #eeee;
+}
+
+.bokadstädcontainer {
+  background-color: #eeee;
+}
+
 .bokadstädcontainer,
 .historikcontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 0px 0px 0px;
 
   .bokadstädul,
   .historikul {
@@ -55,8 +66,26 @@
   }
 }
 
+.historikcontainer {
+  color: white;
+  background-color: #393e46;
+}
+
+.scroll {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  max-height: 400px;
+}
+
 .line {
-  border-bottom: 0.5px solid black;
+  border-bottom: 0.5px solid rgb(255, 255, 255);
+}
+
+.linegray {
+  border-bottom: 0.5px solid #000000;
 }
 
 .bokadbtncontainer {
@@ -100,6 +129,20 @@
   }
 }
 
-.historiktitle {
-  margin: 100px 0px 0px 0px;
+.historiktitle,
+.bokadstädtitle {
+  margin: 50px 0px 10px 0px;
+}
+
+@media only screen and (min-width: 600px) {
+  .bookWrapper {
+    a {
+      width: 20%;
+    }
+  }
+
+  .bokadstädul,
+  .historikul {
+    width: 33% !important;
+  }
 }
