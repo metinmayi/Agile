@@ -14,12 +14,14 @@ export async function login() {
 				}),
 			});
 			const data = await response.json();
-			console.log(data);
 
 			if (data.loggedIn) {
 				localStorage.setItem("inloggad", inputs[0].value);
 				window.location.href = "http://127.0.0.1:5500/minasidor.html";
+				return;
 			}
+			const errorMessage = document.querySelector(".errorMessage");
+			errorMessage.replaceChildren(data.message);
 		} catch (error) {
 			console.log(error);
 		}
