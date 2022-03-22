@@ -1,37 +1,37 @@
 header {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 150px;
-  .logoContainer {
-    width: 50%;
-  }
-  h1 {
-    text-align: center;
-    font-size: 3rem;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 150px;
+    .logoContainer {
+        width: 50%;
+    }
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
 
-  h3 {
-    margin: 0px 0px 0px 15px;
-    font-size: 1.5rem;
-    font-weight: 300;
+    h3 {
+        margin: 0px 0px 0px 15px;
+        font-size: 1.5rem;
+        font-weight: 300;
+
+        a {
+            color: $darkgray;
+        }
+    }
 
     a {
-      color: $darkgray;
+        margin: 0px 15px 0px 0px;
+        text-decoration: none;
     }
-  }
-
-  a {
-    margin: 0px 15px 0px 0px;
-    text-decoration: none;
-  }
 }
 
 // .bookingHeader {
@@ -57,7 +57,7 @@ nav {
 
 h2 {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 30px;
 }
 
 #pContainer {
