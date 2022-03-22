@@ -47,6 +47,9 @@ body {
     }
     a {
         @include main-button;
+        @media only screen and (min-width: 600px) {
+            width: 30%;
+        }
     }
 }
 
