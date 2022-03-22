@@ -1,5 +1,5 @@
 export async function login() {
-	const loginForm = document.querySelector(".loginForm");
+	const loginForm = document.querySelector(".registerForm");
 	const inputs = document.querySelectorAll("input");
 	loginForm.addEventListener("submit", async (event) => {
 		event.preventDefault();
@@ -18,9 +18,16 @@ export async function login() {
 
 			if (data.loggedIn) {
 				localStorage.setItem("inloggad", inputs[0].value);
+				window.location.href = "http://127.0.0.1:5500/minasidor.html";
 			}
 		} catch (error) {
 			console.log(error);
 		}
 	});
+}
+
+export async function loggedInChecker() {
+	if (localStorage.getItem("inloggad")) {
+		window.location.href = "http://127.0.0.1:5500/minasidor.html";
+	}
 }
