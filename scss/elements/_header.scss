@@ -11,3 +11,34 @@ header {
         font-size: 3rem;
     }
 }
+
+// .bookingHeader {
+//     height: 100px;
+//     background-color: black;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     .wrapper {
+//         display: flex;
+//         justify-content: space-between;
+//         width: 90%;
+//         background-color: aqua;
+//         height: 90%;
+//         .bookingPageLogo,
+//         .logoutContainer {
+//             width: 30%;
+//             height: 100%;
+//             background-color: pink;
+//         }
+//     }
+// }
+
+h2 {
+    text-align: center;
+    margin-top: 150px;
+}
+
+#pContainer {
+    width: 50%;
+    font-size: 1.4rem;
+}
