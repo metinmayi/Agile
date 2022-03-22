@@ -4,12 +4,13 @@ require("../mongoose.js");
 const express = require("express");
 const router = express.Router();
 
-const UsersModel = require("../models/UsersModel.js");
-const utils = require("../utils.js");
+const BookingModel = require("../models/BookingModel.js");
 
 //Create booking
 router.post("/book", async (req, res) => {
-	console.log("Booked");
+	const newBooking = new BookingModel(req.body);
+	await newBooking.save();
+	res.send({ message: "Success" });
 });
 
 module.exports = router;
