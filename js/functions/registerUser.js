@@ -1,4 +1,4 @@
-export function registerUser() {
+export async function registerUser() {
 	const form = document.querySelector(".registerForm");
 	// All of the inputs on the page.
 	const formInputs = document.querySelectorAll("input");
