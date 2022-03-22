@@ -1,0 +1,148 @@
+.logoutbtn {
+  width: 50px;
+}
+
+.bokadstädtitle,
+.historiktitle,
+.mstitle {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.historiktitle {
+  color: white;
+}
+
+.textWrapperms {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0px;
+
+  p {
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+.bookWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0px 50px 0px;
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  a {
+    @include main-button;
+  }
+}
+
+.bokadstädbakgrund {
+  background-color: #eeee;
+}
+
+.bokadstädcontainer {
+  background-color: #eeee;
+}
+
+.bokadstädcontainer,
+.historikcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .bokadstädul,
+  .historikul {
+    width: 80%;
+    margin: 0px 0px 30px 0px;
+  }
+  .bokadstädul div,
+  .historikul div {
+    margin: 0px 0px 5px 0px;
+  }
+}
+
+.historikcontainer {
+  color: white;
+  background-color: #393e46;
+}
+
+.scroll {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  max-height: 400px;
+}
+
+.line {
+  border-bottom: 0.5px solid rgb(255, 255, 255);
+}
+
+.linegray {
+  border-bottom: 0.5px solid #000000;
+}
+
+.bokadbtncontainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ändrabtn,
+.tabortbtn {
+  padding: 5px 25px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px 0px;
+}
+
+.ändrabtn {
+  background-color: $darkgray;
+  color: white;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: $gray;
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(1);
+  }
+}
+
+.tabortbtn {
+  background-color: $orange;
+  color: white;
+  &:hover {
+    transform: scale(1.05);
+    background-color: $gray;
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(1);
+  }
+}
+
+.historiktitle,
+.bokadstädtitle {
+  margin: 50px 0px 10px 0px;
+}
+
+@media only screen and (min-width: 600px) {
+  .bookWrapper {
+    a {
+      width: 20%;
+    }
+  }
+
+  .bokadstädul,
+  .historikul {
+    width: 33% !important;
+  }
+}

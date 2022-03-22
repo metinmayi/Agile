@@ -1,38 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Space+Mono&display=swap");
+
 * {
-    margin: 0px;
+  margin: 0px;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    color: $darkgray;
-    // font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: $darkgray;
+  // font-weight: bold;
 }
 
 .textWrapper {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    p {
-        width: 90%;
-        font-size: 22pt;
-        font-weight: 500;
-    }
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  p {
+    width: 90%;
+    font-size: 22pt;
+    font-weight: 300;
+  }
 }
 
 .loginRegisterWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    p {
-        font-size: 1.5rem;
-        margin-bottom: 15px;
-    }
-    a {
-        @include main-button;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  a {
+    @include main-button;
+  }
 }
