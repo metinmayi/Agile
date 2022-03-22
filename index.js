@@ -6,6 +6,7 @@ const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
 const userRoutes = require("./routes/users.js");
+const bookingsRoutes = require("./routes/bookings.js");
 
 const { ObjectId } = require("mongodb");
 
@@ -19,6 +20,7 @@ app.use(express.static("public"));
 
 //Routes
 app.use("/users", userRoutes);
+app.use("/bookings", bookingsRoutes);
 
 app.listen(3000, () => {
 	console.log("Server is up");

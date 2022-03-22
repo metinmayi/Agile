@@ -52,9 +52,4 @@ router.post("/register", async (req, res) => {
 	res.redirect("http://127.0.0.1:5500/login.html");
 });
 
-router.post("/register", async (req, res) => {
-	console.log(req.body);
-	res.send({ username: "Karin" });
-});
-
 module.exports = router;
