@@ -10,7 +10,28 @@ const { ObjectId } = require("mongodb");
 const utils = require("../utils.js");
 
 router.post("/login", async (req, res) => {
-	res.send("Pong");
+	const { username, password } = req.body;
+	//Checks for the same username
+	try {
+		const bajs = await UsersModel.findOne({ username: username });
+		// If there was no user found
+		if (!bajs) {
+			return res.send({
+				message: "Det användarnamnet är inte registrerat hos oss.",
+				loggedIn: false,
+			});
+		}
+		const passwordMatch = utils.comparePassword(password, bajs.hashedPassword);
+		if (!passwordMatch) {
+			return res.send({
+				message: "Fel lösenord.",
+				loggedIn: false,
+			});
+		}
+		res.send({ message: "Välkommen", loggedIn: true });
+	} catch (error) {
+		console.log(error);
+	}
 });
 
 /////// REGISTER FUNCTION ////////
@@ -23,8 +44,7 @@ router.post("/register", async (req, res) => {
 	});
 
 	try {
-		const bajs = await newUser.save();
-		console.log(bajs);
+		await newUser.save();
 	} catch (error) {
 		console.log(error);
 	}
