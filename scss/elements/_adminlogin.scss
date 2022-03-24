@@ -1,0 +1,47 @@
+.adminContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+.registeradminForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  input {
+    @include input-field;
+    display: flex;
+    align-items: center;
+  }
+  select {
+    @include input-field;
+    width: 50%;
+    font-size: 1.2rem;
+    background-color: white;
+  }
+  .submitButton {
+    display: flex;
+    justify-content: center;
+    @include main-button;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .registeradminForm {
+    input {
+      @include input-field-desktop;
+    }
+    select {
+      @include input-field-desktop;
+    }
+    .submitButton {
+      @include main-button-desktop;
+    }
+  }
+}
