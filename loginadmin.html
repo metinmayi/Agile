@@ -10,30 +10,28 @@
   <body>
     <div class="heroContainer">
       <nav>
-        <h3><a href="/minasidor.html">StädaFint</a></h3>
+        <h3><a href="index.html">StädaFint</a></h3>
       </nav>
+      <div class="adminContainer">
+        <form class="registeradminForm" action="/users/login" method="post">
+          <input
+            type="text"
+            id="loginAdminEmail"
+            name="loginAdminEmail"
+            placeholder="E-post"
+            required
+          />
+          <input
+            required
+            type="password"
+            id="loginAdminPassword"
+            name="loginAdminPassword"
+            placeholder="Lösenord"
+          />
 
-      <form class="registerForm" action="/users/login" method="post">
-        <input
-          type="text"
-          id="loginAdminEmail"
-          name="loginAdminEmail"
-          placeholder="E-post"
-          required
-        />
-        <input
-          required
-          type="password"
-          id="loginAdminPassword"
-          name="loginAdminPassword"
-          placeholder="Lösenord"
-        />
-
-        <input type="submit" value="Logga in" class="submitButton" />
-        <p class="errorMessage"></p>
-      </form>
-      <div class="textWrapperlogin">
-        Inget inlogg? Skapa ett <a href="/register.html">här</a>
+          <input type="submit" value="Logga in" class="submitButton" />
+          <p class="errorMessage"></p>
+        </form>
       </div>
     </div>
     <script src="./js/loginPage.js" type="module"></script>
