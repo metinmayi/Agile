@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/style.css" />
+    <title>Städafint</title>
+  </head>
+  <body>
+    <div class="heroContainer">
+      <nav>
+        <h3><a href="/minasidor.html">StädaFint</a></h3>
+      </nav>
+
+      <form class="registerForm" action="/users/login" method="post">
+        <input
+          type="text"
+          id="loginAdminEmail"
+          name="loginAdminEmail"
+          placeholder="E-post"
+          required
+        />
+        <input
+          required
+          type="password"
+          id="loginAdminPassword"
+          name="loginAdminPassword"
+          placeholder="Lösenord"
+        />
+
+        <input type="submit" value="Logga in" class="submitButton" />
+        <p class="errorMessage"></p>
+      </form>
+      <div class="textWrapperlogin">
+        Inget inlogg? Skapa ett <a href="/register.html">här</a>
+      </div>
+    </div>
+    <script src="./js/loginPage.js" type="module"></script>
+  </body>
+</html>
