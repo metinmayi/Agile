@@ -19,4 +19,10 @@ router.post("/book", async (req, res) => {
 	res.send({ message: "Success" });
 });
 
+// Cancel Booking
+router.post("/cancel", async (req, res) => {
+	await BookingModel.deleteOne({ _id: req.body.id });
+	res.send({ message: "Success" });
+});
+
 module.exports = router;

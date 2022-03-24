@@ -43,6 +43,7 @@ export async function GetBookings() {
 	}
 
 	const container = document.querySelector(".scroll");
+	container.replaceChildren();
 	if (bookings.length < 1) {
 		const noBookingsP = document.createElement("h5");
 		noBookingsP.append("Du har inga bokade städningar.");
@@ -90,7 +91,19 @@ export async function GetBookings() {
 
 		const secondButton = document.createElement("button");
 		secondButton.className = "tabortbtn";
+		secondButton.id = booking._id;
 		secondButton.append("Ta Bort");
 		secondATag.appendChild(secondButton);
+
+		secondButton.addEventListener("click", async (e) => {
+			e.preventDefault();
+			await fetch("http://localhost:3000/bookings/cancel", {
+				method: "POST",
+				mode: "cors",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({ id: booking._id }),
+			});
+			GetBookings();
+		});
 	});
 }
