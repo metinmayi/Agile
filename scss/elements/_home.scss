@@ -72,3 +72,32 @@ body {
     border-bottom-right-radius: 200px;
     background-color: $gray;
 }
+
+.orangeBubble {
+    z-index: 0;
+    width: 50%;
+    height: 400px;
+    float: right;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    margin-top: -400px;
+    background-color: $orange;
+    @media only screen and (min-width: 600px) {
+        width: 20%;
+    }
+}
+
+.blueBubble {
+    z-index: 0;
+    width: 40%;
+    height: 300px;
+    float: left;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    margin-top: -600px;
+    background-color: $gray;
+    @media only screen and (min-width: 600px) {
+        width: 10%;
+        float: left;
+    }
+}
