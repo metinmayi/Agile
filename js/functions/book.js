@@ -23,7 +23,7 @@ export async function book() {
                     body: JSON.stringify(bookingObject),
                 }
             );
-            window.location.href = "http://127.0.0.1:5500/minasidor.html";
+            window.location.href = "http://127.0.0.1:5500/payment.html";
         } catch (error) {
             console.log(error);
         }

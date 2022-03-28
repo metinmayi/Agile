@@ -1,49 +1,49 @@
 .registerForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  input {
-    @include input-field;
     display: flex;
-    align-items: center;
-  }
-  select {
-    @include input-field;
-    width: 50%;
-    font-size: 1.2rem;
-    background-color: white;
-  }
-  .submitButton {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    @include main-button;
-    text-align: center;
-    margin-top: 40px;
-  }
+    align-items: center;
+    flex-wrap: wrap;
+    input {
+        @include input-field;
+        display: flex;
+        align-items: center;
+    }
+    select {
+        @include input-field;
+        width: 50%;
+        font-size: 1.2rem;
+        background-color: white;
+    }
+    .submitButton {
+        display: flex;
+        justify-content: center;
+        @include main-button;
+        text-align: center;
+        margin-top: 40px;
+    }
 }
 
-.textWrapper a {
-  text-decoration: none;
-  color: $darkgray;
-  font-size: 1.1rem;
+.backLink {
+    text-decoration: none;
+    color: $darkgray;
+    // font-size: 1.1rem;
 }
 
 ::placeholder {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 @media only screen and (min-width: 600px) {
-  .registerForm {
-    input {
-      @include input-field-desktop;
+    .registerForm {
+        input {
+            @include input-field-desktop;
+        }
+        select {
+            @include input-field-desktop;
+        }
+        .submitButton {
+            @include main-button-desktop;
+        }
     }
-    select {
-      @include input-field-desktop;
-    }
-    .submitButton {
-      @include main-button-desktop;
-    }
-  }
 }
