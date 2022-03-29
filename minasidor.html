@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/public/style.css" />
-		<title>Städafint</title>
-	</head>
-	<body>
-		<nav>
-			<h3><a href="/minasidor.html">StädaFint</a></h3>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/public/style.css" />
+        <title>Städafint</title>
+    </head>
+    <body>
+        <nav>
+            <h3><a href="/minasidor.html">StädaFint</a></h3>
 
-			<a class="logoutatag"
-				><div class="logouttext">Logga ut</div>
-				<img
-					class="logoutbtn"
-					src="/assets/Logga-ut-sugare.png"
-					alt="Bild på en som dammsuger"
-				/>
-			</a>
-		</nav>
-		<div class="mstitle">Mina sidor</div>
-		<div class="textWrapperms">
-			<p>Här kan du boka städhjälp, samt se dina bokningar och din historik.</p>
-		</div>
-		<div class="bookWrapper">
-			<a href="booking.html">Boka städhjälp</a>
-		</div>
+            <a class="logoutatag"
+                ><div class="logouttext">Logga ut</div>
+                <img
+                    class="logoutbtn"
+                    src="/assets/Logga-ut-sugare.png"
+                    alt="Bild på en som dammsuger"
+                />
+            </a>
+        </nav>
+        <div class="mstitle">Mina sidor</div>
+        <div class="textWrapperms">
+            <p>
+                Här kan du boka städhjälp, samt se dina bokningar och din
+                historik.
+            </p>
+        </div>
+        <div class="GDPR-modal"></div>
+        <div class="bookWrapper">
+            <a href="booking.html">Boka städhjälp</a>
+        </div>
 
-		<div class="bokadstädcontainer">
-			<div class="bokadstädtitle">Bokad städhjälp</div>
-			<div class="scroll"></div>
-		</div>
+        <div class="bokadstädcontainer">
+            <div class="bokadstädtitle">Bokad städhjälp</div>
+            <div class="scroll"></div>
+        </div>
 
-		<div class="historikcontainer">
-			<div class="historiktitle">Historik</div>
-			<div class="scroll" id="historik"></div>
-		</div>
+        <div class="historikcontainer">
+            <div class="historiktitle">Historik</div>
+            <div class="scroll" id="historik"></div>
+        </div>
 
-		<script src="/js/functions/hover.js"></script>
-		<script src="/js/minaSidor.js" type="module"></script>
-	</body>
+        <script src="/js/functions/hover.js"></script>
+        <script src="/js/minaSidor.js" type="module"></script>
+    </body>
 </html>

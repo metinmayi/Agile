@@ -144,3 +144,18 @@
         width: 33% !important;
     }
 }
+
+.GDPR-modal {
+    display: none;
+    position: absolute;
+    background-color: #5b8ad6;
+    width: 90vw;
+    height: 50vh;
+    left: 5vw;
+    @media only screen and (min-width: 600px) {
+        left: 15vw;
+        z-index: 10;
+        height: 70vh;
+        width: 70vw;
+    }
+}
