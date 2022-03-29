@@ -53,26 +53,27 @@ body {
     }
 }
 
-.orangeBox {
-    height: 170px;
-    border-top-left-radius: 170px;
-    background-color: $orange;
-    margin-top: -150px;
-    z-index: 0;
-}
+// .orangeBox {
+//     height: 170px;
+//     border-top-left-radius: 170px;
+//     background-color: $orange;
+//     margin-top: -150px;
+//     z-index: 0;
+// }
 
-.lilBox {
-    height: 8px;
-    background-color: $silver;
-    z-index: 1;
-}
+// .lilBox {
+//     height: 8px;
+//     background-color: $silver;
+//     z-index: 1;
+// }
 
-.grayBox {
-    height: 130px;
-    border-bottom-right-radius: 200px;
-    background-color: $gray;
-}
+// .grayBox {
+//     height: 130px;
+//     border-bottom-right-radius: 200px;
+//     background-color: $gray;
+// }
 
+.orangeBox,
 .orangeBubble {
     z-index: 0;
     width: 50%;
@@ -87,6 +88,7 @@ body {
     }
 }
 
+.grayBox,
 .blueBubble {
     z-index: 0;
     width: 40%;
@@ -94,10 +96,28 @@ body {
     float: left;
     border-top-right-radius: 200px;
     border-bottom-right-radius: 200px;
-    margin-top: -600px;
+    margin-top: -550px;
     background-color: $gray;
     @media only screen and (min-width: 600px) {
         width: 10%;
         float: left;
+    }
+}
+
+// .orangeBox {
+//     margin-top: -100px;
+//     border-bottom-left-radius: 0px;
+//     width: 60%;
+// }
+
+.grayBox {
+    margin-top: initial;
+}
+
+.orangeBox {
+    margin-top: -200px;
+    @media only screen and (min-width: 600px) {
+        width: 10%;
+        height: 300px;
     }
 }
