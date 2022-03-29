@@ -53,22 +53,71 @@ body {
     }
 }
 
-.orangeBox {
-    height: 170px;
-    border-top-left-radius: 170px;
-    background-color: $orange;
-    margin-top: -150px;
+// .orangeBox {
+//     height: 170px;
+//     border-top-left-radius: 170px;
+//     background-color: $orange;
+//     margin-top: -150px;
+//     z-index: 0;
+// }
+
+// .lilBox {
+//     height: 8px;
+//     background-color: $silver;
+//     z-index: 1;
+// }
+
+// .grayBox {
+//     height: 130px;
+//     border-bottom-right-radius: 200px;
+//     background-color: $gray;
+// }
+
+.orangeBox,
+.orangeBubble {
     z-index: 0;
+    width: 50%;
+    height: 400px;
+    float: right;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    margin-top: -400px;
+    background-color: $orange;
+    @media only screen and (min-width: 600px) {
+        width: 20%;
+    }
 }
 
-.lilBox {
-    height: 8px;
-    background-color: $silver;
-    z-index: 1;
+.grayBox,
+.blueBubble {
+    z-index: 0;
+    width: 40%;
+    height: 300px;
+    float: left;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    margin-top: -550px;
+    background-color: $gray;
+    @media only screen and (min-width: 600px) {
+        width: 10%;
+        float: left;
+    }
 }
+
+// .orangeBox {
+//     margin-top: -100px;
+//     border-bottom-left-radius: 0px;
+//     width: 60%;
+// }
 
 .grayBox {
-    height: 130px;
-    border-bottom-right-radius: 200px;
-    background-color: $gray;
+    margin-top: initial;
+}
+
+.orangeBox {
+    margin-top: -200px;
+    @media only screen and (min-width: 600px) {
+        width: 10%;
+        height: 300px;
+    }
 }
