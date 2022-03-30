@@ -23,5 +23,5 @@ app.use("/users", userRoutes);
 app.use("/bookings", bookingsRoutes);
 
 app.listen(3000, () => {
-	console.log("Server is up");
+    console.log("Server is up");
 });
