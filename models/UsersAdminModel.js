@@ -1,10 +1,14 @@
 const mongoose = require("mongoose");
 
 const userAdminSchema = new mongoose.Schema({
-  email: String,
   hashedPassword: String,
+  username: String,
 });
 
-const UsersAdminModel = mongoose.model("UserAdmin", userAdminSchema);
+const UsersAdminModel = mongoose.model(
+  "usersadmin",
+  userAdminSchema,
+  "usersadmin"
+);
 
 module.exports = UsersAdminModel;
