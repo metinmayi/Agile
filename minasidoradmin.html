@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/style.css" />
+    <title>Städafint</title>
+  </head>
+  <body>
+    <nav>
+      <h3><a href="/minasidor.html">StädaFint</a></h3>
+
+      <a class="logoutatag"
+        ><div class="logouttext">Logga ut</div>
+        <img
+          class="logoutbtn"
+          src="/assets/Logga-ut-sugare.png"
+          alt="Bild på en som dammsuger"
+        />
+      </a>
+    </nav>
+
+    <div class="textWrapperms">
+      <p>Här kan du boka städhjälp åt kunder och lägga till nya användare.</p>
+    </div>
+
+    <div class="desktopcontainer">
+      <div class="bookingsContainerDesktop">
+        <div class="bookWrapper">
+          <a href="booking.html">Boka åt kund</a>
+        </div>
+
+        <div class="bokadstädcontaineradmin">
+          <div class="bokadstädtitle">Bokningar</div>
+          <div class="scroll"></div>
+        </div>
+      </div>
+
+      <div class="historikcontainer desktopadmin">
+        <div class="historiktitle">Skapa konto åt användare</div>
+        <form class="registerFormAdmin" method="post">
+          <input
+            type="text"
+            name="username"
+            id="registrationName"
+            placeholder="Användarnamn"
+            required
+          />
+          <input
+            required
+            type="password"
+            name="password"
+            placeholder="Lösenord"
+            autocomplete="on"
+            id="registrationPassword"
+          />
+          <input
+            required
+            type="password"
+            name="confirmPassword"
+            placeholder="Bekräfta lösenord"
+            class="register-input"
+            autocomplete="on"
+            id="registrationPasswordRepeat"
+          />
+          <select>
+            <option>Privat</option>
+            <option>Företag</option>
+          </select>
+          <input type="submit" value="Skapa konto" class="submitButton" />
+        </form>
+      </div>
+    </div>
+
+    <script src="/js/functions/hover.js"></script>
+  </body>
+</html>

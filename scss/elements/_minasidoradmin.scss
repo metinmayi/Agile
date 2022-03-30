@@ -1,0 +1,49 @@
+@media only screen and (min-width: 600px) {
+  .bokadstädul,
+  .historikul {
+    width: 33% !important;
+  }
+
+  .desktopcontainer {
+    display: flex;
+    margin: 40px 0px 0px 0px;
+
+    .bookingsContainerDesktop,
+    .desktopadmin {
+      width: 50%;
+      height: 100vh;
+    }
+    .bookingsContainerDesktop {
+      background: #eeeeee;
+    }
+
+    .historikcontainerdesktop {
+      background: #393e46;
+    }
+
+    .bookWrapperadmin {
+      margin: 30px 0px;
+      text-align: center;
+
+      a {
+        font-weight: 500;
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: #ffff;
+      }
+    }
+
+    .textWrapperms {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 20px 0px;
+
+      p {
+        width: 90%;
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
