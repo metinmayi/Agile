@@ -22,6 +22,9 @@ nav {
         margin: 0px 0px 0px 15px;
         font-size: 1.5rem;
         font-weight: 300;
+        @media only screen and (min-width: 600px) {
+            margin-left: 45px;
+        }
 
         a {
             color: $darkgray;
@@ -36,6 +39,10 @@ nav {
         align-items: center;
         justify-content: space-between;
         min-width: 5%;
+
+        @media only screen and (min-width: 600px) {
+            margin-right: 45px;
+        }
 
         div {
             color: $darkgray;
