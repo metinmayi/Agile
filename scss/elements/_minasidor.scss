@@ -148,14 +148,39 @@
 .GDPR-modal {
     display: none;
     position: absolute;
-    background-color: #5b8ad6;
+    background-color: $silver;
     width: 90vw;
-    height: 50vh;
+    height: 600px;
     left: 5vw;
+    border: 1px solid black;
+
+    .GDPR-text-container {
+        width: 90%;
+        margin: 0 auto;
+        p {
+            margin-top: 20px;
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+    .buttonWrapper {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-evenly;
+        .declineCookies {
+            @include main-button;
+            background-color: $orange;
+            padding: 0px;
+        }
+        .acceptCookies {
+            @include main-button;
+        }
+    }
     @media only screen and (min-width: 600px) {
-        left: 15vw;
+        left: 25vw;
         z-index: 10;
-        height: 70vh;
-        width: 70vw;
+        height: 55vh;
+        width: 50vw;
     }
 }

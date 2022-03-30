@@ -1,6 +1,6 @@
 import { GetBookings } from "./functions/book.js";
 import { logout } from "./functions/logout.js";
-// import { GDPR } from "./functions/GDPR-function.js";
+import { GDPR } from "./functions/GDPR-function.js";
 
 window.onload = function () {
     // Logout button
@@ -9,5 +9,5 @@ window.onload = function () {
     // GetBookings
     GetBookings();
 
-    // GDPR();
+    GDPR();
 };

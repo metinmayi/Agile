@@ -44,7 +44,7 @@ router.post("/register", async (req, res) => {
     const newUser = new UsersModel({
         username,
         hashedPassword: utils.hashPassword(password),
-        hasLoggedIn: false,
+        hasLoggedIn: 0,
     });
 
     try {
@@ -56,10 +56,14 @@ router.post("/register", async (req, res) => {
     res.redirect("http://127.0.0.1:5500/login.html");
 });
 
-router.get("/userId", async (req, res) => {
+router.patch("/userId", async (req, res) => {
     const getUser = req.username;
-    const user = await UsersModel.findOne({ username: getUser });
-    res.send({ user: user });
+    const user = await UsersModel.findOneAndUpdate(
+        { username: req.body.getUser },
+        { $set: { hasLoggedIn: 1 } }
+    );
+    console.log(user);
+    res.send({ hasLoggedIn: user.hasLoggedIn });
 });
 
 module.exports = router;
