@@ -9,7 +9,7 @@ export async function GDPR() {
     });
     const data = await response.json();
     console.log(data.hasLoggedIn);
-    if ((data.hasLoggedIn = 1)) {
+    if (data.hasLoggedIn < 1) {
         modal.setAttribute("style", "display: block");
     }
     document.querySelector(".declineCookies").addEventListener("click", () => {
